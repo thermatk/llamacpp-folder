@@ -1,0 +1,26 @@
+services:
+    llama.cpp-r:
+        container_name: llamacpp-r
+        volumes:
+            - ./models:/models
+            - ./models.ini:/models.ini
+        devices:
+            - /dev/kfd
+            - /dev/dri
+        ports:
+            - 8080:8080
+        image: ghcr.io/ggml-org/llama.cpp:server-rocm
+        # sacrifice 3 GB because otherwise can't use the rest of the PC. Can be more aggressive on special occasions
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 3072
+    llama.cpp-v:
+        container_name: llamacpp-v
+        volumes:
+            - ./models:/models
+            - ./models.ini:/models.ini
+        devices:
+            - /dev/kfd
+            - /dev/dri
+        ports:
+            - 8083:8080
+        image: ghcr.io/ggml-org/llama.cpp:server-vulkan
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 3072
