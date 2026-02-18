@@ -12,7 +12,7 @@ echo -e "# models directory structure\n\n\`\`\`text\n$(tree -h --du --dirsfirst 
 
 ## run engine
 
-ROCm and Vulkan docker containers configured in [compose.yaml](compose.yaml).
+ROCm, Vulkan and CPU docker containers configured in [compose.yaml](compose.yaml).
 
 Run with:
 
@@ -26,8 +26,10 @@ Logs with:
 docker logs llamacpp-r
 #or
 docker logs llamacpp-v
+#or
+docker logs llamacpp-c
 ```
 
 ## use it
 
-Built-in WebUI and all APIs are under `http://localhost:8083/` for Vulkan or `http://localhost:8080/` for ROCm.
+Built-in WebUI and all APIs are under `http://localhost:8083/` for Vulkan, `http://localhost:8080/` for ROCm or `http://localhost:8082/` for CPU.

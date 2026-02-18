@@ -24,3 +24,15 @@ services:
             - 8083:8080
         image: ghcr.io/ggml-org/llama.cpp:server-vulkan
         command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 3072
+    llama.cpp-c:
+        container_name: llamacpp-c
+        volumes:
+            - ./models:/models
+            - ./models.ini:/models.ini
+        devices:
+            - /dev/kfd
+            - /dev/dri
+        ports:
+            - 8082:8080
+        image: ghcr.io/ggml-org/llama.cpp:server
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0
