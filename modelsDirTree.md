@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[665G]  models/
+[666G]  models/
 ├── [605M]  bge-m3/
 │   └── [605M]  bge-m3-Q8_0.gguf
 ├── [ 11G]  gemma-3-12b-it/
@@ -28,6 +28,9 @@
 │   └── [1.7G]  mmproj-F16.gguf
 ├── [ 24G]  GLM-4.7-Flash/
 │   └── [ 24G]  GLM-4.7-Flash-UD-Q6_K_XL.gguf
+├── [1.7G]  GLM-OCR/
+│   ├── [906M]  GLM-OCR-Q8_0.gguf
+│   └── [829M]  mmproj-GLM-OCR-f16.gguf
 ├── [ 59G]  gpt-oss-120b/
 │   ├── [ 12M]  gpt-oss-120b-mxfp4-00001-of-00003.gguf
 │   ├── [ 30G]  gpt-oss-120b-mxfp4-00002-of-00003.gguf
@@ -76,5 +79,5 @@
     ├── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
     └── [815M]  translategemma-12b-it.mmproj-f16.gguf
 
- 665G used in 26 directories, 48 files
+ 666G used in 27 directories, 50 files
 ```
