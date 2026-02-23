@@ -52,6 +52,7 @@
 │   ├── [ 19G]  Mistral-Small-3.2-24B-Instruct-2506-UD-Q6_K_XL.gguf
 │   └── [837M]  mmproj-F16.gguf
 ├── [1.3G]  PaddleOCR-VL-1.5/
+│   ├── [1.8K]  chat_template_llama.jinja
 │   ├── [841M]  mmproj-PaddleOCR-VL-1.5.gguf
 │   └── [475M]  PaddleOCR-VL-1.5-Q8_0.gguf
 ├── [ 25G]  Qwen3-30B-A3B-Instruct-2507/
@@ -79,8 +80,8 @@
 │   ├── [1.1G]  mmproj-BF16.gguf
 │   └── [7.0G]  Qwen3-VL-8B-Thinking-UD-Q6_K_XL.gguf
 └── [8.7G]  translategemma-12b-it-i1/
-    ├── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
-    └── [815M]  translategemma-12b-it.mmproj-f16.gguf
+    ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
+    └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 668G used in 28 directories, 52 files
+ 668G used in 28 directories, 53 files
 ```
