@@ -10,6 +10,11 @@ Models are saved in gguf in the `models` subfolder. Configuration and parameters
 echo -e "# models directory structure\n\n\`\`\`text\n$(tree -h --du --dirsfirst -F models)\n\`\`\`" > modelsDirTree.md
 ```
 
+Folders added with:
+```sh
+find models -type d ! -path '*/\.*' -print0 | xargs -0 -I {} sh -c 'echo "*.gguf" > "{}/.gitignore"'
+```
+
 ## run engine
 
 ROCm, Vulkan and CPU docker containers configured in [compose.yaml](compose.yaml).
