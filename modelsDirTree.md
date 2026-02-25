@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[668G]  models/
+[590G]  models/
 ├── [605M]  bge-m3/
 │   └── [605M]  bge-m3-Q8_0.gguf
 ├── [ 11G]  gemma-3-12b-it/
@@ -55,21 +55,16 @@
 │   ├── [1.8K]  chat_template_llama.jinja
 │   ├── [841M]  mmproj-PaddleOCR-VL-1.5.gguf
 │   └── [475M]  PaddleOCR-VL-1.5-Q8_0.gguf
-├── [ 25G]  Qwen3-30B-A3B-Instruct-2507/
-│   └── [ 25G]  Qwen3-30B-A3B-Instruct-2507-UD-Q6_K_XL.gguf
+├── [ 22G]  Qwen3.5-27B/
+│   ├── [888M]  mmproj-BF16.gguf
+│   └── [ 21G]  Qwen3.5-27B-UD-Q6_K_XL.gguf
+├── [ 29G]  Qwen3.5-35B-A3B/
+│   ├── [861M]  mmproj-BF16.gguf
+│   └── [ 28G]  Qwen3.5-35B-A3B-UD-Q6_K_XL.gguf
 ├── [ 61G]  Qwen3-Coder-Next/
 │   ├── [5.7M]  Qwen3-Coder-Next-UD-Q6_K_XL-00001-of-00003.gguf
 │   ├── [ 47G]  Qwen3-Coder-Next-UD-Q6_K_XL-00002-of-00003.gguf
 │   └── [ 15G]  Qwen3-Coder-Next-UD-Q6_K_XL-00003-of-00003.gguf
-├── [ 64G]  Qwen3-Next-80B-A3B-Thinking/
-│   ├── [ 46G]  Qwen3-Next-80B-A3B-Thinking-UD-Q6_K_XL-00001-of-00002.gguf
-│   └── [ 17G]  Qwen3-Next-80B-A3B-Thinking-UD-Q6_K_XL-00002-of-00002.gguf
-├── [ 21G]  Qwen3-VL-30B-A3B-Thinking/
-│   ├── [1.0G]  mmproj-F16.gguf
-│   └── [ 20G]  Qwen3-VL-30B-A3B-Thinking-UD-Q5_K_XL.gguf
-├── [ 20G]  Qwen3-VL-32B-Instruct/
-│   ├── [1.1G]  mmproj-F16.gguf
-│   └── [ 19G]  Qwen3-VL-32B-Instruct-UD-Q4_K_XL.gguf
 ├── [5.5G]  Qwen3-VL-4B-Thinking/
 │   ├── [797M]  mmproj-F16.gguf
 │   └── [4.7G]  Qwen3-VL-4B-Thinking-UD-Q8_K_XL.gguf
@@ -83,5 +78,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 668G used in 28 directories, 53 files
+ 590G used in 26 directories, 50 files
 ```
