@@ -4,6 +4,7 @@ services:
         volumes:
             - ./models:/models
             - ./models.ini:/models.ini
+            - ./logs-r/:/logs
         devices:
             - /dev/kfd
             - /dev/dri
@@ -12,7 +13,7 @@ services:
         restart: unless-stopped
         image: ghcr.io/ggml-org/llama.cpp:server-rocm
         # sacrifice 3 GB because otherwise can't use the rest of the PC. Can be more aggressive on special occasions
-        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 3072
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 3072 --log-file /logs/log.txt --log-verbose --log-timestamps
     llama.cpp-v:
         container_name: llamacpp-v
         volumes:
