@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[584G]  models/
+[586G]  models/
 ├── [605M]  bge-m3/
 │   └── [605M]  bge-m3-Q8_0.gguf
 ├── [ 11G]  gemma-3-12b-it/
@@ -58,9 +58,9 @@
 ├── [ 25G]  Qwen3.5-27B/
 │   ├── [885M]  mmproj-F16.gguf
 │   └── [ 24G]  Qwen3.5-27B-UD-Q6_K_XL.gguf
-├── [ 29G]  Qwen3.5-35B-A3B/
+├── [ 31G]  Qwen3.5-35B-A3B/
 │   ├── [858M]  mmproj-F16.gguf
-│   └── [ 28G]  Qwen3.5-35B-A3B-UD-Q6_K_XL.gguf
+│   └── [ 30G]  Qwen3.5-35B-A3B-UD-Q6_K_XL.gguf
 ├── [4.5G]  Qwen3.5-4B/
 │   ├── [641M]  mmproj-F16.gguf
 │   └── [3.9G]  Qwen3.5-4B-UD-Q6_K_XL.gguf
@@ -75,5 +75,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 584G used in 25 directories, 48 files
+ 586G used in 25 directories, 48 files
 ```
