@@ -12,8 +12,8 @@ services:
             - 8080:8080
         restart: unless-stopped
         image: ghcr.io/ggml-org/llama.cpp:server-rocm
-        # sacrifice 3 GB because otherwise can't use the rest of the PC. Can be more aggressive on special occasions
-        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 3072 --log-file /logs/log.txt --log-verbose --log-timestamps
+        # sacrifice 4 GB because otherwise can't use the rest of the PC. Can be more aggressive on special occasions
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 4096 --log-file /logs/log.txt --log-verbose --log-timestamps
     llama.cpp-v:
         container_name: llamacpp-v
         volumes:
@@ -26,7 +26,7 @@ services:
             - 8083:8080
         restart: unless-stopped
         image: ghcr.io/ggml-org/llama.cpp:server-vulkan
-        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 3072
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 4096
     llama.cpp-c:
         container_name: llamacpp-c
         volumes:
