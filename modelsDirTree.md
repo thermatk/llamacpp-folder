@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[586G]  models/
+[597G]  models/
 ├── [605M]  bge-m3/
 │   └── [605M]  bge-m3-Q8_0.gguf
 ├── [ 11G]  gemma-3-12b-it/
@@ -37,6 +37,8 @@
 │   └── [ 29G]  gpt-oss-120b-mxfp4-00003-of-00003.gguf
 ├── [ 11G]  gpt-oss-20b/
 │   └── [ 11G]  gpt-oss-20b-mxfp4.gguf
+├── [ 11G]  gpt-oss-20b-heretic-ara-v3/
+│   └── [ 11G]  gpt-oss-20b-heretic-ara-v3.i1-MXFP4_MOE.gguf
 ├── [ 11G]  gpt-oss-20b-heretic-v2/
 │   └── [ 11G]  gpt-oss-20b-heretic-v2.i1-MXFP4_MOE.gguf
 ├── [498M]  granite-docling-258M/
@@ -75,5 +77,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 586G used in 25 directories, 48 files
+ 597G used in 26 directories, 49 files
 ```
