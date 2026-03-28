@@ -1,2 +1,3 @@
 *.gguf
 /logs-r/log.txt
+/openwebui

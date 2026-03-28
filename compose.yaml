@@ -1,5 +1,24 @@
 services:
-    llama.cpp-r:
+    open-web-ui:
+        container_name: open-web-ui
+        image: ghcr.io/open-webui/open-webui:main
+        depends_on:
+            - llamacpp-r
+        ports:
+            - 8070:8080
+        environment:
+            - 'ENABLE_OPENAI_API=true'
+            - 'ENABLE_OLLAMA_API=false'
+            - 'OPENAI_API_BASE_URL=http://llamacpp-r:8080'
+            - 'OPENAI_API_KEY=nada'
+            - 'WEBUI_AUTH=false'
+            - 'WEBUI_NAME=StrategikonAI'
+        extra_hosts:
+            - host.docker.internal:host-gateway
+        volumes:
+            - ./openwebui:/app/backend/data
+        restart: unless-stopped
+    llamacpp-r:
         container_name: llamacpp-r
         volumes:
             - ./models:/models
@@ -15,6 +34,7 @@ services:
         # sacrifice 4 GB because otherwise can't use the rest of the PC. Can be more aggressive on special occasions
         command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 4096 --log-file /logs/log.txt --log-verbose --log-timestamps
     llama.cpp-v:
+    llamacpp-v:
         container_name: llamacpp-v
         volumes:
             - ./models:/models
@@ -28,6 +48,7 @@ services:
         image: ghcr.io/ggml-org/llama.cpp:server-vulkan
         command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 4096
     llama.cpp-c:
+    llamacpp-c:
         container_name: llamacpp-c
         volumes:
             - ./models:/models
