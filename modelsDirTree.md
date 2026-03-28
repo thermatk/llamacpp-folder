@@ -1,9 +1,14 @@
 # models directory structure
 
 ```text
-[595G]  models/
+[626G]  models/
+├── [7.0G]  Angelic_Eclipse_12B/
+│   └── [7.0G]  Angelic_Eclipse_12B.i1-Q4_K_M.gguf
 ├── [605M]  bge-m3/
 │   └── [605M]  bge-m3-Q8_0.gguf
+├── [3.3G]  DeepSeek-OCR/
+│   ├── [2.9G]  DeepSeek-OCR-Q8_0.gguf
+│   └── [427M]  mmproj-DeepSeek-OCR-Q8_0.gguf
 ├── [ 11G]  gemma-3-12b-it/
 │   ├── [9.8G]  gemma-3-12b-it-UD-Q6_K_XL.gguf
 │   └── [815M]  mmproj-BF16.gguf
@@ -44,9 +49,14 @@
 ├── [498M]  granite-docling-258M/
 │   ├── [316M]  granite-docling-258M-bf16.gguf
 │   └── [181M]  mmproj-model-f16.gguf
+├── [7.0G]  Impish_Bloodmoon_12B/
+│   └── [7.0G]  Impish_Bloodmoon_12B.i1-Q4_K_M.gguf
 ├── [ 59G]  kldzj_gpt-oss-120b-heretic-v2/
 │   ├── [ 37G]  kldzj_gpt-oss-120b-heretic-v2-MXFP4_MOE-00001-of-00002.gguf
 │   └── [ 22G]  kldzj_gpt-oss-120b-heretic-v2-MXFP4_MOE-00002-of-00002.gguf
+├── [ 14G]  Magidonia-24B-v4.3/
+│   ├── [ 13G]  Magidonia-24B-v4.3.i1-Q4_K_M.gguf
+│   └── [837M]  mmproj-F16.gguf
 ├── [ 20G]  Magistral-Small-2509/
 │   ├── [ 19G]  Magistral-Small-2509-UD-Q6_K_XL.gguf
 │   └── [837M]  mmproj-F16.gguf
@@ -77,5 +87,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 595G used in 26 directories, 49 files
+ 626G used in 30 directories, 55 files
 ```
