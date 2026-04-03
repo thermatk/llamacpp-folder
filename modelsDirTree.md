@@ -1,25 +1,23 @@
 # models directory structure
 
 ```text
-[626G]  models/
+[644G]  models/
 ├── [7.0G]  Angelic_Eclipse_12B/
 │   └── [7.0G]  Angelic_Eclipse_12B.i1-Q4_K_M.gguf
 ├── [605M]  bge-m3/
 │   └── [605M]  bge-m3-Q8_0.gguf
-├── [3.3G]  DeepSeek-OCR/
-│   ├── [2.9G]  DeepSeek-OCR-Q8_0.gguf
-│   └── [427M]  mmproj-DeepSeek-OCR-Q8_0.gguf
-├── [ 11G]  gemma-3-12b-it/
-│   ├── [9.8G]  gemma-3-12b-it-UD-Q6_K_XL.gguf
-│   └── [815M]  mmproj-BF16.gguf
-├── [ 16G]  gemma-3-27b-it/
-│   ├── [ 16G]  gemma-3-27b-it-UD-Q4_K_XL.gguf
-│   └── [818M]  mmproj-BF16.gguf
-├── [4.1G]  gemma-3-4b-it/
-│   ├── [3.3G]  gemma-3-4b-it-UD-Q6_K_XL.gguf
-│   └── [812M]  mmproj-BF16.gguf
-├── [6.2G]  gemma-3n-E4B-it/
-│   └── [6.2G]  gemma-3n-E4B-it-UD-Q6_K_XL.gguf
+├── [6.2G]  DeepSeek-OCR/
+│   ├── [5.5G]  deepseek-ocr-bf16.gguf
+│   └── [788M]  mmproj-deepseek-ocr-bf16.gguf
+├── [ 23G]  gemma-4-26B-A4B-it/
+│   ├── [ 22G]  gemma-4-26B-A4B-it-UD-Q6_K_XL.gguf
+│   └── [1.1G]  mmproj-BF16.gguf
+├── [ 22G]  gemma-4-31B-it/
+│   ├── [ 20G]  gemma-4-31B-it-UD-Q5_K_XL.gguf
+│   └── [1.1G]  mmproj-BF16.gguf
+├── [7.9G]  gemma-4-E4B-it/
+│   ├── [6.9G]  gemma-4-E4B-it-UD-Q6_K_XL.gguf
+│   └── [946M]  mmproj-BF16.gguf
 ├── [ 95G]  GLM-4.5-Air/
 │   ├── [ 46G]  GLM-4.5-Air-UD-Q6_K_XL-00001-of-00003.gguf
 │   ├── [ 46G]  GLM-4.5-Air-UD-Q6_K_XL-00002-of-00003.gguf
@@ -87,5 +85,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 626G used in 30 directories, 55 files
+ 644G used in 29 directories, 54 files
 ```
