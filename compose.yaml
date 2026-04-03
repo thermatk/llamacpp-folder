@@ -32,8 +32,7 @@ services:
         restart: unless-stopped
         image: ghcr.io/ggml-org/llama.cpp:server-rocm
         # sacrifice 4 GB because otherwise can't use the rest of the PC. Can be more aggressive on special occasions
-        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 4096 --log-file /logs/log.txt --log-verbose --log-timestamps
-    llama.cpp-v:
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --sleep-idle-seconds 900 --fit-target 4096 --webui-config "{\"showSystemMessage\":true,\"showThoughtInProgress\":true,\"showRawOutputSwitch\":true,\"keepStatsVisible\":true,\"showMessageStats\":true,\"alwaysShowSidebarOnDesktop\":true,\"autoShowSidebarOnNewChat\":true,\"showRawModelNames\":true}" --log-file /logs/log.txt --log-verbose --log-timestamps
     llamacpp-v:
         container_name: llamacpp-v
         volumes:
@@ -46,8 +45,7 @@ services:
             - 8083:8080
         restart: unless-stopped
         image: ghcr.io/ggml-org/llama.cpp:server-vulkan
-        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --fit-target 4096
-    llama.cpp-c:
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --sleep-idle-seconds 900 --fit-target 4096 --webui-config "{\"showSystemMessage\":true,\"showThoughtInProgress\":true,\"showRawOutputSwitch\":true,\"keepStatsVisible\":true,\"showMessageStats\":true,\"alwaysShowSidebarOnDesktop\":true,\"autoShowSidebarOnNewChat\":true,\"showRawModelNames\":true}"
     llamacpp-c:
         container_name: llamacpp-c
         volumes:
@@ -57,4 +55,4 @@ services:
             - 8082:8080
         restart: unless-stopped
         image: ghcr.io/ggml-org/llama.cpp:server
-        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0
+        command: --models-dir /models  --models-preset /models.ini --port 8080 --host 0.0.0.0 --sleep-idle-seconds 900 --webui-config "{\"showSystemMessage\":true,\"showThoughtInProgress\":true,\"showRawOutputSwitch\":true,\"keepStatsVisible\":true,\"showMessageStats\":true,\"alwaysShowSidebarOnDesktop\":true,\"autoShowSidebarOnNewChat\":true,\"showRawModelNames\":true}"
