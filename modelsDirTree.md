@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[644G]  models/
+[650G]  models/
 ├── [7.0G]  Angelic_Eclipse_12B/
 │   └── [7.0G]  Angelic_Eclipse_12B.i1-Q4_K_M.gguf
 ├── [605M]  bge-m3/
@@ -9,15 +9,15 @@
 ├── [6.2G]  DeepSeek-OCR/
 │   ├── [5.5G]  deepseek-ocr-bf16.gguf
 │   └── [788M]  mmproj-deepseek-ocr-bf16.gguf
-├── [ 23G]  gemma-4-26B-A4B-it/
+├── [ 24G]  gemma-4-26B-A4B-it/
 │   ├── [ 22G]  gemma-4-26B-A4B-it-UD-Q6_K_XL.gguf
-│   └── [1.1G]  mmproj-BF16.gguf
-├── [ 22G]  gemma-4-31B-it/
+│   └── [2.1G]  mmproj-F32.gguf
+├── [ 23G]  gemma-4-31B-it/
 │   ├── [ 20G]  gemma-4-31B-it-UD-Q5_K_XL.gguf
-│   └── [1.1G]  mmproj-BF16.gguf
-├── [7.9G]  gemma-4-E4B-it/
+│   └── [2.1G]  mmproj-F32.gguf
+├── [8.7G]  gemma-4-E4B-it/
 │   ├── [6.9G]  gemma-4-E4B-it-UD-Q6_K_XL.gguf
-│   └── [946M]  mmproj-BF16.gguf
+│   └── [1.8G]  mmproj-F32.gguf
 ├── [ 95G]  GLM-4.5-Air/
 │   ├── [ 46G]  GLM-4.5-Air-UD-Q6_K_XL-00001-of-00003.gguf
 │   ├── [ 46G]  GLM-4.5-Air-UD-Q6_K_XL-00002-of-00003.gguf
@@ -65,17 +65,17 @@
 │   ├── [1.8K]  chat_template_llama.jinja
 │   ├── [841M]  mmproj-PaddleOCR-VL-1.5.gguf
 │   └── [475M]  PaddleOCR-VL-1.5-Q8_0.gguf
-├── [ 25G]  Qwen3.5-27B/
-│   ├── [885M]  mmproj-F16.gguf
+├── [ 26G]  Qwen3.5-27B/
+│   ├── [1.7G]  mmproj-F32.gguf
 │   └── [ 24G]  Qwen3.5-27B-UD-Q6_K_XL.gguf
-├── [ 31G]  Qwen3.5-35B-A3B/
-│   ├── [858M]  mmproj-F16.gguf
+├── [ 32G]  Qwen3.5-35B-A3B/
+│   ├── [1.7G]  mmproj-F32.gguf
 │   └── [ 30G]  Qwen3.5-35B-A3B-UD-Q6_K_XL.gguf
-├── [4.5G]  Qwen3.5-4B/
-│   ├── [641M]  mmproj-F16.gguf
+├── [5.1G]  Qwen3.5-4B/
+│   ├── [1.2G]  mmproj-F32.gguf
 │   └── [3.9G]  Qwen3.5-4B-UD-Q6_K_XL.gguf
-├── [9.0G]  Qwen3.5-9B/
-│   ├── [876M]  mmproj-F16.gguf
+├── [9.9G]  Qwen3.5-9B/
+│   ├── [1.7G]  mmproj-F32.gguf
 │   └── [8.2G]  Qwen3.5-9B-UD-Q6_K_XL.gguf
 ├── [ 61G]  Qwen3-Coder-Next/
 │   ├── [5.7M]  Qwen3-Coder-Next-UD-Q6_K_XL-00001-of-00003.gguf
@@ -85,5 +85,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 644G used in 29 directories, 54 files
+ 650G used in 29 directories, 54 files
 ```
