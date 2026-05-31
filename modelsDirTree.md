@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[639G]  models/
+[644G]  models/
 ├── [7.0G]  Angelic_Eclipse_12B/
 │   └── [7.0G]  Angelic_Eclipse_12B.i1-Q4_K_M.gguf
 ├── [605M]  bge-m3/
@@ -59,22 +59,25 @@
 ├── [ 20G]  Mistral-Small-3.2-24B-Instruct-2506/
 │   ├── [ 19G]  Mistral-Small-3.2-24B-Instruct-2506-UD-Q6_K_XL.gguf
 │   └── [837M]  mmproj-F16.gguf
+├── [4.8G]  NuExtract3/
+│   ├── [644M]  mmproj-NuExtract3-BF16.gguf
+│   └── [4.2G]  NuExtract3-Q8_0.gguf
 ├── [1.3G]  PaddleOCR-VL-1.5/
 │   ├── [1.8K]  chat_template_llama.jinja
 │   ├── [841M]  mmproj-PaddleOCR-VL-1.5.gguf
 │   └── [475M]  PaddleOCR-VL-1.5-Q8_0.gguf
-├── [ 26G]  Qwen3.5-27B/
-│   ├── [1.7G]  mmproj-F32.gguf
-│   └── [ 24G]  Qwen3.5-27B-UD-Q6_K_XL.gguf
-├── [ 32G]  Qwen3.5-35B-A3B/
-│   ├── [1.7G]  mmproj-F32.gguf
-│   └── [ 30G]  Qwen3.5-35B-A3B-UD-Q6_K_XL.gguf
 ├── [5.1G]  Qwen3.5-4B/
 │   ├── [1.2G]  mmproj-F32.gguf
 │   └── [3.9G]  Qwen3.5-4B-UD-Q6_K_XL.gguf
 ├── [9.9G]  Qwen3.5-9B/
 │   ├── [1.7G]  mmproj-F32.gguf
 │   └── [8.2G]  Qwen3.5-9B-UD-Q6_K_XL.gguf
+├── [ 26G]  Qwen3.6-27B/
+│   ├── [1.7G]  mmproj-F32.gguf
+│   └── [ 24G]  Qwen3.6-27B-UD-Q6_K_XL.gguf
+├── [ 32G]  Qwen3.6-35B-A3B/
+│   ├── [1.7G]  mmproj-F32.gguf
+│   └── [ 30G]  Qwen3.6-35B-A3B-UD-Q6_K_XL.gguf
 ├── [ 61G]  Qwen3-Coder-Next/
 │   ├── [5.7M]  Qwen3-Coder-Next-UD-Q6_K_XL-00001-of-00003.gguf
 │   ├── [ 47G]  Qwen3-Coder-Next-UD-Q6_K_XL-00002-of-00003.gguf
@@ -83,5 +86,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 639G used in 28 directories, 53 files
+ 644G used in 29 directories, 55 files
 ```
