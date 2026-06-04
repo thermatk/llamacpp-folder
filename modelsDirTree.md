@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[644G]  models/
+[654G]  models/
 ├── [7.0G]  Angelic_Eclipse_12B/
 │   └── [7.0G]  Angelic_Eclipse_12B.i1-Q4_K_M.gguf
 ├── [605M]  bge-m3/
@@ -9,6 +9,9 @@
 ├── [6.2G]  DeepSeek-OCR/
 │   ├── [5.5G]  deepseek-ocr-bf16.gguf
 │   └── [788M]  mmproj-deepseek-ocr-bf16.gguf
+├── [ 10G]  gemma-4-12B-it/
+│   ├── [ 10G]  gemma-4-12B-it-UD-Q6_K_XL.gguf
+│   └── [200M]  mmproj-F32.gguf
 ├── [ 24G]  gemma-4-26B-A4B-it/
 │   ├── [ 22G]  gemma-4-26B-A4B-it-UD-Q6_K_XL.gguf
 │   └── [2.1G]  mmproj-F32.gguf
@@ -86,5 +89,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 644G used in 29 directories, 55 files
+ 654G used in 30 directories, 57 files
 ```
