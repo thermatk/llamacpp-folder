@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[654G]  models/
+[651G]  models/
 ├── [7.0G]  Angelic_Eclipse_12B/
 │   └── [7.0G]  Angelic_Eclipse_12B.i1-Q4_K_M.gguf
 ├── [605M]  bge-m3/
@@ -48,6 +48,9 @@
 ├── [498M]  granite-docling-258M/
 │   ├── [316M]  granite-docling-258M-bf16.gguf
 │   └── [181M]  mmproj-model-f16.gguf
+├── [4.5G]  granite-vision-4.1-4b/
+│   ├── [1.1G]  granite-vision-4.1-4b-mmproj-bf16.gguf
+│   └── [3.4G]  granite-vision-4.1-4b-Q8_0.gguf
 ├── [7.0G]  Impish_Bloodmoon_12B/
 │   └── [7.0G]  Impish_Bloodmoon_12B.i1-Q4_K_M.gguf
 ├── [ 59G]  kldzj_gpt-oss-120b-heretic-v2/
@@ -89,5 +92,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 654G used in 30 directories, 57 files
+ 651G used in 31 directories, 59 files
 ```
