@@ -9,14 +9,14 @@
 ├── [6.2G]  DeepSeek-OCR/
 │   ├── [5.5G]  deepseek-ocr-bf16.gguf
 │   └── [788M]  mmproj-deepseek-ocr-bf16.gguf
-├── [ 10G]  gemma-4-12B-it/
-│   ├── [ 10G]  gemma-4-12B-it-UD-Q6_K_XL.gguf
+├── [6.5G]  gemma-4-12B-it/
+│   ├── [6.3G]  gemma-4-12B-it-qat-UD-Q4_K_XL.gguf
 │   └── [200M]  mmproj-F32.gguf
 ├── [ 24G]  gemma-4-26B-A4B-it/
 │   ├── [ 22G]  gemma-4-26B-A4B-it-UD-Q6_K_XL.gguf
 │   └── [2.1G]  mmproj-F32.gguf
-├── [ 23G]  gemma-4-31B-it/
-│   ├── [ 20G]  gemma-4-31B-it-UD-Q5_K_XL.gguf
+├── [ 18G]  gemma-4-31B-it/
+│   ├── [ 16G]  gemma-4-31B-it-qat-UD-Q4_K_XL.gguf
 │   └── [2.1G]  mmproj-F32.gguf
 ├── [8.7G]  gemma-4-E4B-it/
 │   ├── [6.9G]  gemma-4-E4B-it-UD-Q6_K_XL.gguf
