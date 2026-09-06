@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[616G]  models/
+[654G]  models/
 ├── [7.0G]  Angelic_Eclipse_12B/
 │   └── [7.0G]  Angelic_Eclipse_12B.i1-Q4_K_M.gguf
 ├── [605M]  bge-m3/
@@ -63,6 +63,12 @@
 │   └── [1.1G]  mmproj-model-f16.gguf
 ├── [7.0G]  Impish_Bloodmoon_12B/
 │   └── [7.0G]  Impish_Bloodmoon_12B.i1-Q4_K_M.gguf
+├── [3.1G]  Infinity-Parser2-Flash/
+│   ├── [1.2G]  Infinity-Parser2-Flash.mmproj-f32.gguf
+│   └── [1.9G]  Infinity-Parser2-Flash.Q8_0.gguf
+├── [ 35G]  Infinity-Parser2-Pro/
+│   ├── [861M]  Infinity-Parser2-Pro-mmproj-bf16.gguf
+│   └── [ 34G]  Infinity-Parser2-Pro-Q8_0.gguf
 ├── [ 59G]  kldzj_gpt-oss-120b-heretic-v2/
 │   ├── [ 37G]  kldzj_gpt-oss-120b-heretic-v2-MXFP4_MOE-00001-of-00002.gguf
 │   └── [ 22G]  kldzj_gpt-oss-120b-heretic-v2-MXFP4_MOE-00002-of-00002.gguf
@@ -98,5 +104,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 616G used in 32 directories, 64 files
+ 654G used in 34 directories, 68 files
 ```
