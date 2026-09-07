@@ -1,7 +1,7 @@
 # models directory structure
 
 ```text
-[654G]  models/
+[675G]  models/
 ├── [7.0G]  Angelic_Eclipse_12B/
 │   └── [7.0G]  Angelic_Eclipse_12B.i1-Q4_K_M.gguf
 ├── [605M]  bge-m3/
@@ -84,6 +84,9 @@
 ├── [4.9G]  NuExtract3/
 │   ├── [644M]  mmproj-NuExtract3-BF16.gguf
 │   └── [4.3G]  NuExtract3-Q8_0.gguf
+├── [ 20G]  orcarouter_Qwen3.8-27B-Uncensored/
+│   ├── [888M]  mmproj-orcarouter_Qwen3.8-27B-Uncensored-bf16.gguf
+│   └── [ 19G]  orcarouter_Qwen3.8-27B-Uncensored-Q5_K_M.gguf
 ├── [1.3G]  PaddleOCR-VL-1.5/
 │   ├── [1.8K]  chat_template_llama.jinja
 │   ├── [841M]  mmproj-PaddleOCR-VL-1.5.gguf
@@ -104,5 +107,5 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 
- 654G used in 34 directories, 68 files
+ 675G used in 35 directories, 70 files
 ```
