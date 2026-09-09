@@ -7,7 +7,7 @@ Models are saved in gguf in the `models` subfolder. Configuration and parameters
 [Current list of files](modelsDirTree.md). Made with:
 
 ```sh
-echo -e "# models directory structure\n\n\`\`\`text\n$(tree -h --du --dirsfirst -F models)\n\`\`\`" > modelsDirTree.md
+echo -e "# models directory structure\n\n\`\`\`text\n$(tree -h --du --dirsfirst -F models audiomodels)\n\`\`\`" > modelsDirTree.md
 ```
 
 Folders added with:

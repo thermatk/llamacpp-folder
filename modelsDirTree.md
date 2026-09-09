@@ -106,6 +106,31 @@
 └── [8.7G]  translategemma-12b-it-i1/
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
+[ 21G]  audiomodels/
+├── [ 13G]  MiniMax-Music3-GGUF/
+│   ├── [6.6K]  config/
+│   │   ├── [ 292]  condition_encoder.json
+│   │   ├── [1.6K]  language_model.json
+│   │   ├── [ 274]  rvq_depth_decoder.json
+│   │   ├── [ 294]  transformer.json
+│   │   └── [ 251]  vocoder.json
+│   ├── [ 11M]  tokenizer/
+│   │   ├── [ 377]  tokenizer_config.json
+│   │   └── [ 11M]  tokenizer.json
+│   ├── [ 96M]  condition_encoder.gguf
+│   ├── [ 107]  config.json
+│   ├── [9.2G]  language_model_q8_0.gguf
+│   ├── [681M]  rvq_depth_decoder_q8_0.gguf
+│   ├── [2.4G]  transformer_q8_0.gguf
+│   └── [207M]  vocoder.gguf
+├── [1.2G]  Nemotron-3.5-ASR-Streaming-0.6B-GGUF/
+│   └── [1.2G]  nemotron-3.5-asr-streaming-0.6b-f16.gguf
+├── [1.2G]  Parakeet-TDT-0.6B-v3-GGUF/
+│   └── [1.2G]  parakeet-tdt-0.6b-v3-f16.gguf
+├── [2.6G]  Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF/
+│   └── [2.6G]  qwen3-tts-12hz-1.7b-customvoice-q8_0.gguf
+└── [3.0G]  VibeVoice-1.5B-GGUF/
+    └── [3.0G]  vibevoice-1.5b-q8_0.gguf
 
- 675G used in 35 directories, 70 files
+ 695G used in 43 directories, 87 files
 ```
