@@ -107,6 +107,8 @@
     ├── [815M]  mmproj-translategemma-12b-it.f16.gguf
     └── [7.9G]  translategemma-12b-it.i1-Q5_K_M.gguf
 [ 21G]  audiomodels/
+├── [202M]  Kokoro-82M-GGUF/
+│   └── [202M]  kokoro-82m-bf16.gguf
 ├── [ 13G]  MiniMax-Music3-GGUF/
 │   ├── [6.6K]  config/
 │   │   ├── [ 292]  condition_encoder.json
@@ -131,6 +133,18 @@
 │   └── [2.6G]  qwen3-tts-12hz-1.7b-customvoice-q8_0.gguf
 └── [3.0G]  VibeVoice-1.5B-GGUF/
     └── [3.0G]  vibevoice-1.5b-q8_0.gguf
+[ 66G]  comfymodels/
+├── [ 38G]  diffusion_models/
+│   ├── [ 15G]  minimax_h3_fl2va_pruned-Q6_K.gguf
+│   ├── [ 15G]  minimax_h3_ref2va_pruned-Q6_K.gguf
+│   └── [7.1G]  qwen-image-2.1-Q8_0.gguf
+├── [ 22G]  text_encoders/
+│   ├── [ 15G]  qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors
+│   └── [7.0G]  Qwen3-VL-8B-Instruct-UD-Q6_K_XL.gguf
+└── [6.0G]  vae/
+    ├── [577M]  minimax_h3_audio_vae_fp32.safetensors
+    ├── [4.8G]  minimax_h3_video_vae_fp16.safetensors
+    └── [644M]  qwen_image_2.1_vae_bf16.safetensors
 
- 695G used in 43 directories, 87 files
+ 761G used in 48 directories, 96 files
 ```

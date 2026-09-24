@@ -1,23 +1,38 @@
-# Configured llama.cpp in a folder
+# My selfhosted AI stack
++ One folder for everything
++ Works on my machine ™️. Main targets are:
+	+ GNU/Linux (Arch/Debian/Ubuntu/CachyOS)
+	+ GPU acceleration via ROCm/Vulkan
++ Main tools:
+    - [llama.cpp](https://github.com/ggml-org/llama.cpp)
+    - [audio.cpp](https://github.com/0xShug0/audio.cpp)
+    - [ComfyUI](https://github.com/comfy-org/comfyui)
 
 ## get models
 
-Models are saved in gguf in the `models` subfolder. Configuration and parameters are in [models.ini](models.ini).
+Models are to be saved, mostly in [gguf](https://huggingface.co/docs/hub/gguf), in the `models`, `audiomodels` and `comfymodels` subfolders.
 
 [Current list of files](modelsDirTree.md). Made with:
 
 ```sh
-echo -e "# models directory structure\n\n\`\`\`text\n$(tree -h --du --dirsfirst -F models audiomodels)\n\`\`\`" > modelsDirTree.md
+echo -e "# models directory structure\n\n\`\`\`text\n$(tree -h --du --dirsfirst -F models audiomodels comfymodels)\n\`\`\`" > modelsDirTree.md
 ```
 
-Folders added with:
-```sh
-find models -type d ! -path '*/\.*' -print0 | xargs -0 -I {} sh -c 'echo "*.gguf" > "{}/.gitignore"'
-```
+Configuration and parameters for llama.cpp [router mode](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md#model-presets) are in [models.ini](models.ini).
 
-## run engine
+## run
 
-ROCm, Vulkan and CPU docker containers configured in [compose.yaml](compose.yaml).
+Most containers configured in [compose.yaml](compose.yaml).
+
++ llama.cpp
+    - ROCm, llamacpp-r [http://localhost:8080](http://localhost:8080)
+    - Vulkan, llamacpp-v [http://localhost:8083](http://localhost:8083)
+    - CPU, llamacpp-c [http://localhost:8082](http://localhost:8082)
++ llama.cpp - linked to ministack of models [minimodels.ini](minimodels.ini)
+    - Vulkan, llamacpp-t-v [http://localhost:8093](http://localhost:8093)
+    - CPU, llamacpp-t-c [http://localhost:8092](http://localhost:8092)
++ audio.cpp at [http://localhost:8081](http://localhost:8081)
++ [Open WebUI](https://github.com/open-webui/open-webui) at [http://localhost:8070](http://localhost:8070)
 
 Run with:
 
@@ -29,12 +44,22 @@ Logs with:
 
 ```sh
 docker logs llamacpp-r
-#or
-docker logs llamacpp-v
-#or
-docker logs llamacpp-c
+```
+and so on.
+
+### ComfyUI
+Subfolder `comfyui-rocm-docker`.
+
+Build image with:
+
+```sh
+docker compose build
 ```
 
-## use it
+Run with:
 
-Built-in WebUI and all APIs are under `http://localhost:8083/` for Vulkan, `http://localhost:8080/` for ROCm or `http://localhost:8082/` for CPU.
+```sh
+docker compose up -d
+```
+
+Available at [http://localhost:8182](http://localhost:8182)
