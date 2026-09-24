@@ -1,3 +1,4 @@
 *.gguf
 /logs-r/log.txt
 /openwebui
+/comfyui-rocm-docker/user

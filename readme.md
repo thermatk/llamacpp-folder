@@ -1,8 +1,9 @@
-# My selfhosted AI stack
+# My Local Inference Stack
 + One folder for everything
-+ Works on my machine ™️. Main targets are:
++ Self-hosted
++ Works on my machines ™️. Main targets are:
 	+ GNU/Linux (Arch/Debian/Ubuntu/CachyOS)
-	+ GPU acceleration via ROCm/Vulkan
+	+ If GPU acceleration then via ROCm/Vulkan. No NVIDIA CUDA!
 + Main tools:
     - [llama.cpp](https://github.com/ggml-org/llama.cpp)
     - [audio.cpp](https://github.com/0xShug0/audio.cpp)
