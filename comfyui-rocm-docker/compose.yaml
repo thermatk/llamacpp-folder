@@ -1,0 +1,22 @@
+services:
+  comfyui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: comfyui
+    ports:
+      - "8182:8188"
+    devices:
+      - /dev/kfd
+      - /dev/dri
+    security_opt:
+      - seccomp=unconfined
+    group_add:
+      - '989' #getent group render | cut -d: -f3
+      - '986' #getent group video | cut -d: -f3
+    volumes:
+      - ../comfymodels:/opt/ComfyUI/models
+      - ./input:/opt/ComfyUI/input
+      - ./output:/opt/ComfyUI/output
+      - ./user:/opt/ComfyUI/user
+    restart: unless-stopped
