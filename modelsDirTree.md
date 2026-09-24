@@ -133,18 +133,19 @@
 │   └── [2.6G]  qwen3-tts-12hz-1.7b-customvoice-q8_0.gguf
 └── [3.0G]  VibeVoice-1.5B-GGUF/
     └── [3.0G]  vibevoice-1.5b-q8_0.gguf
-[ 66G]  comfymodels/
-├── [ 38G]  diffusion_models/
+[ 71G]  comfymodels/
+├── [ 42G]  diffusion_models/
 │   ├── [ 15G]  minimax_h3_fl2va_pruned-Q6_K.gguf
 │   ├── [ 15G]  minimax_h3_ref2va_pruned-Q6_K.gguf
-│   └── [7.1G]  qwen-image-2.1-Q8_0.gguf
-├── [ 22G]  text_encoders/
+│   ├── [6.8G]  qwen_image_2.1_int8_convrot.safetensors
+│   └── [3.9G]  qwen_image_2.1_Q4_0.gguf
+├── [ 23G]  text_encoders/
 │   ├── [ 15G]  qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors
-│   └── [7.0G]  Qwen3-VL-8B-Instruct-UD-Q6_K_XL.gguf
+│   └── [8.7G]  qwen3vl_8b_int8_convrot.safetensors
 └── [6.0G]  vae/
     ├── [577M]  minimax_h3_audio_vae_fp32.safetensors
     ├── [4.8G]  minimax_h3_video_vae_fp16.safetensors
     └── [644M]  qwen_image_2.1_vae_bf16.safetensors
 
- 761G used in 48 directories, 96 files
+ 766G used in 48 directories, 97 files
 ```
